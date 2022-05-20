@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title> Player Stats Logger</title>
+   
+</head>
+<body>
+
+    <ul class="nav justify-content-center navbar bg-success">
+        <nav class="navbar bg-success">
+            <div class="container-fluid">
+             <p class = "display-5 fw-bold text-white" > Player Stats Logger </p>
+            </div>
+      </ul>
+<main>
+    
+    <div class="b-example-divider"></div>
+
+    <div class="bg-dark text-secondary px-4 py-0 text-center">
+      <div class="py-5">
+        <h1 class="h1 text-white"><u>CREATE NEW PLAYER</u></h1>
+        <div class="col-lg-8 mx-auto text-white">
+            <p class="fs-4 mb-2">URL:  </p>
+            <p class="fs-5 mb-4">http://localhost:3000/newPlayer</p>
+            <p class="fs-4 mb-2">POST Request:  </p>
+            <p class="fs-4 mb-3">JSON DATA: {"playerName":"Cristiano Ronaldo"}  </p>
+            <p class="fs-4 mb-0">Response:  </p>
+            <p class="fs-4 mb-0">{"playerID": "T9ywf7qqB"} </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="b-example-divider mb-0"></div>
+
+    <div class="b-example-divider"></div>
+
+    <div class="bg-secondary text-secondary px-4 py-0 text-center">
+      <div class="py-5">
+        <h1 class="h1 text-white"><u>ADD AGE</u></h1>
+        <div class="col-lg-8 mx-auto text-white">
+            <p class="fs-4 mb-2">URL:  </p>
+            <p class="fs-5 mb-4">http://localhost:3000/replace with ID of Player/age</p>
+            <p class="fs-4 mb-2">PUT Request:  </p>
+            <p class="fs-4 mb-3">JSON DATA: {"age":37} </p>
+            <p class="fs-4 mb-0">Response:  </p>
+            <p class="fs-4 mb-0">{"sucess": true} </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="b-example-divider mb-0"></div>
+
+    <div class="b-example-divider"></div>
+
+    <div class="bg-dark text-secondary px-4 py-0 text-center">
+      <div class="py-5">
+        <h1 class="h1 text-white"><u>ADD TROPHIES</u></h1>
+        <div class="col-lg-8 mx-auto text-white">
+            <p class="fs-4 mb-2">URL:  </p>
+            <p class="fs-5 mb-4">http://localhost:3000/Replace with Player ID/trophy</p>
+            <p class="fs-4 mb-2">PUT Request:  </p>
+            <p class="fs-4 mb-3">JSON DATA: {"trophy": 32}  </p>
+            <p class="fs-4 mb-0">Response:  </p>
+            <p class="fs-4 mb-0">{"sucess": true}</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="b-example-divider mb-0"></div>
+
+
+    <div class="b-example-divider"></div>
+
+    <div class="bg-secondary text-secondary px-4 py-0 text-center">
+      <div class="py-5">
+        <h1 class="h1 text-white"><u>GET STATS OF PLAYER</u></h1>
+        <div class="col-lg-8 mx-auto text-white">
+            <p class="fs-4 mb-2">URL:  </p>
+            <p class="fs-5 mb-4">http://localhost:3000/Replace with ID</p>
+            <p class="fs-4 mb-2">PUT Request:  </p>
+            <p class="fs-4 mb-3">JSON DATA: {"age":37} </p>
+            <p class="fs-4 mb-0">Response:  </p>
+            <p class="fs-4 mb-0">{
+                "Name of the Player": "Cristiano Ronaldo",<br>
+                "age": 37,<br>
+                "trophy": 32
+              } </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="b-example-divider mb-0"></div>
+
+
+    <div class="b-example-divider"></div>
+
+    <div class="bg-dark text-secondary px-4 py-0 text-center">
+      <div class="py-5">
+        <h1 class="h1 text-white"><u>DELETE ID OF PLAYER</u></h1>
+        <div class="col-lg-8 mx-auto text-white">
+            <p class="fs-4 mb-2">DELETE REQUEST: Deletes the information of the player with associated ID  </p>
+            <p class="fs-4 mb-2">URL:  </p>
+            <p class="fs-5 mb-4">http://localhost:3000/replace with id/delete</p>
+            
+            
+            <p class="fs-4 mb-0">Response:  </p>
+            <p class="fs-4 mb-0">{"sucess": true}</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="b-example-divider mb-0"></div>
+</main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- POST Request
+http://localhost:3000/newPlayer
+{"playerName":"Cristiano Ronaldo"}
+
+
+PUT Request
+http://localhost:3000/replace with ID of Player/age
+{"age":37}
+
+
+PUT Request
+http://localhost:3000/Replace with Player ID/trophy
+{"trophy": 32}
+
+GET Request
+http://localhost:3000/Replace with ID
+Gives the stats of the player
+
+DELETE ID
+http://localhost:3000/replace with id/delete -->
+
+
+
